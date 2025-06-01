@@ -1,0 +1,16 @@
+python3 -m venv qlora-env
+
+source qlora-env/bin/activate
+
+pip install -r requirements.txt
+
+
+huggingface-cli login
+** your token here **
+
+CUDA_VISIBLE_DEVICES=0 python qlora.py
+
+
+git config --global user.name "fakraze"
+
+git config --global user.email "fakraze@nycu.edu.tw"
