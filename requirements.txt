@@ -1,0 +1,27 @@
+
+# HuggingFace + PEFT + LoRA
+transformers>=4.40.0
+datasets>=2.18.0
+peft>=0.10.0
+accelerate>=0.28.0
+bitsandbytes>=0.42.0
+
+# Required tools
+scipy
+tqdm
+numpy<2.0
+
+# Tokenizer & conversion tools
+sentencepiece
+protobuf
+tiktoken
+huggingface-hub
+
+# HQQ quantization backend
+hqq==0.2.5
+
+# Gemlite backend for HQQ acceleration
+gemlite==0.4.4
+
+# Triton compiler backend for inference acceleration
+triton==3.2.0
